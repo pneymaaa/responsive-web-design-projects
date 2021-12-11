@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <div class="form-item">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" id="name" placeholder="Your name..." required>
+        </div>
+        <div class="form-item">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" id="email" placeholder="Your email..." required>
+        </div>
+        <div class="form-item">
+            <label id="number-label" for="number">Age</label>
+            <input type="number" min="0" max="100" id="number" placeholder="Your age..." required>
+        </div>
+        <div class="form-item">
+            <label id="dropdown-label" for="dropdown">Current Role</label>
+            <select name="dropdown" id="dropdown">
+                <option value="Select current role">Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Full time job">Full time job</option>
+                <option value="Part time job">Part time job</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-item">
+            <p>Gender</p>
+            <div class="gender-item">
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <span class="bulletmark"></span>
+                    Male
+                </label>
+            </div>
+            <div class="gender-item">
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female">
+                    <span class="bulletmark"></span>
+                    Female
+                </label>
+            </div>
+            <div class="gender-item">
+                <label for="other">
+                    <input type="radio" name="gender" id="other" value="other">
+                    <span class="bulletmark"></span>
+                    Other
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <p>Top Skills</p>
+            <div class="skill-item">
+                <label for="design">
+                    <input type="checkbox" name="skills" id="design" value="design">
+                    <span class="checkmark"></span>
+                    Design
+                </label>
+            </div>
+            <div class="skill-item">
+                <label for="communication">
+                    <input type="checkbox" name="skills" id="communication" value="communication">
+                    <span class="checkmark"></span>
+                    Communication
+                </label>
+            </div>
+            <div class="skill-item">
+                <label for="negotiation">
+                    <input type="checkbox" name="skills" id="negotiation" value="negotiation">
+                    <span class="checkmark"></span>
+                    Negotiation
+                </label>
+            </div>
+            <div class="skill-item">
+                <label for="coding">
+                    <input type="checkbox" name="skills" id="coding" value="coding">
+                    <span class="checkmark"></span>
+                    Coding
+                </label>
+            </div>
+            <div class="skill-item">
+                <label for="leadership">
+                    <input type="checkbox" name="skills" id="leadership" value="leadership">
+                    <span class="checkmark"></span>
+                    Leadership
+                </label>
+            </div>
+            <div class="skill-item">
+                <label for="other">
+                    <input type="checkbox" name="skills" id="other" value="other">
+                    <span class="checkmark"></span>
+                    Other
+                </label>
+            </div>
+        </div>
+        <div class="form-item">
+            <label for="information">Additional Information</label>
+            <textarea name="information" id="information" cols="30" rows="10"></textarea>
+        </div>
+
+
+        <button id="submit" value="Submit">Submit</button>
+    </form>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
